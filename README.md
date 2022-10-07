@@ -4,11 +4,11 @@ Ivan Jacob Agaloos Pesigan
 
 ## Description
 
-Docker and Apptainer containers for the `manMCMedMiss` project.
+Docker and Apptainer/Singularity containers for the `manMCMedMiss` project.
 
 ## Build
 
-To build the docker container and the Apptainer/Singularity image file (`manmcmedmiss.sif`),
+To build the Docker container and the Apptainer/Singularity image file (`manmcmedmiss.sif`),
 run the following.
 
 ```bash
