@@ -1,5 +1,5 @@
-jeksterslab/manmcmedmiss.sif
-============================
+docker-manmcmedmiss.sif
+=======================
 Ivan Jacob Agaloos Pesigan
 
 ## Description
