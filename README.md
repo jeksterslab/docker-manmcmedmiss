@@ -2,6 +2,10 @@ docker-manmcmedmiss.sif
 =======================
 Ivan Jacob Agaloos Pesigan
 
+<!-- badges: start -->
+[![Docker Image CI](https://github.com/jeksterslab/docker-manmcmedmiss.sif/actions/workflows/docker.yaml/badge.svg)](https://github.com/jeksterslab/docker-manmcmedmiss.sif/actions/workflows/docker.yaml)
+<!-- badges: end -->
+
 ## Description
 
 Docker and Apptainer/Singularity containers for the `manMCMedMiss` project.
