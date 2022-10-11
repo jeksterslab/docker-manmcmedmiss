@@ -1,9 +1,9 @@
-docker-manmcmedmiss.sif
-=======================
+docker-manmcmedmiss
+===================
 Ivan Jacob Agaloos Pesigan
 
 <!-- badges: start -->
-[![Docker Image CI](https://github.com/jeksterslab/docker-manmcmedmiss.sif/actions/workflows/docker.yaml/badge.svg)](https://github.com/jeksterslab/docker-manmcmedmiss.sif/actions/workflows/docker.yaml)
+[![Docker Build](https://github.com/jeksterslab/docker-manmcmedmiss/actions/workflows/docker-build.yml/badge.svg)](https://github.com/jeksterslab/docker-manmcmedmiss/actions/workflows/docker-build.yml)
 <!-- badges: end -->
 
 ## Description
@@ -16,7 +16,7 @@ To build the Docker container and the Apptainer/Singularity image file (`manmcme
 run the following.
 
 ```bash
-git clone https://github.com/jeksterslab/docker-manmcmedmiss.sif.git
-cd docker-manmcmedmiss.sif
+git clone https://github.com/jeksterslab/docker-manmcmedmiss.git
+cd docker-manmcmedmiss
 make
 ```
