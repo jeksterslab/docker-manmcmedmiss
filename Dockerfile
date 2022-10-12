@@ -9,10 +9,13 @@ RUN R -e "install.packages(                                   \
         'microbenchmark',                                     \
         'DT',                                                 \
         'lavaan',                                             \
-        'party'                                               \
+        'party',                                              \
+        'semmcci'                                             \
       ),                                                      \
       repos = 'https://packagemanager.rstudio.com/all/latest' \
     )"
+
+RUN R -e "remotes::install_github('jeksterslab/semmcci')"
 
 # install mplus demo
 RUN wget https://www.statmodel.com/download/install_mpluslinux_demo64.bin \
