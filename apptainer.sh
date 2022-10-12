@@ -1,9 +1,8 @@
 #!/bin/bash
 
 # pre TMP ----------------------------------------------------------------------
-mkdir -p "$HOME/tmp"
 TODAY=$(date +"%Y-%m-%d-%H%M")
-TMP_FOLDER=$(mktemp -d -q "$HOME/tmp/$TODAY-XXXXXXXX" || exit 1)
+TMP_FOLDER=$(mktemp -d -q "$HOME/$TODAY-XXXXXXXX" || exit 1)
 # ------------------------------------------------------------------------------
 
 APPTAINER_TMPDIR="$TMP_FOLDER" \
