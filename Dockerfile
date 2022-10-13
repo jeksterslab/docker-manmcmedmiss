@@ -1,4 +1,4 @@
-FROM jeksterslab/template:latest@sha256:2c793858d74565af3b5ce77ad3e05da64f22683128c401d4afe26429e3c4cd2b
+FROM jeksterslab/template:latest@sha256:8ebf7557dcdd190733acc13822eeae1fd70f5ab3b97308e821d53138b4222964
 
 # project packages
 RUN R -e "install.packages(                                   \
