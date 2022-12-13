@@ -22,3 +22,7 @@
 
 # sif
 *.sif
+
+# .clone.sh
+.clone.sh
+
