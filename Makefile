@@ -1,4 +1,4 @@
-.PHONY: clean
+.PHONY: term clean
 
 manmcmedmiss.sif: Dockerfile apptainer.sh manMCMedMiss_0.9.1.tar.gz
 	sudo docker build -t manmcmedmiss .
