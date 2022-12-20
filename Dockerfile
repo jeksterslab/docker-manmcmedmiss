@@ -17,6 +17,24 @@ RUN R -e "install.packages(                                   \
 
 RUN R -e "remotes::install_github('jeksterslab/semmcci')"
 
+RUN R -e "remotes::install_version(                           \
+      package = 'MASS',                                       \
+      version = '7.3-58.1',                                   \
+      repos = 'https://packagemanager.rstudio.com/all/latest' \
+    )"
+
+RUN R -e "remotes::install_version(                           \
+      package = 'mice',                                       \
+      version = '3.14.0',                                     \
+      repos = 'https://packagemanager.rstudio.com/all/latest' \
+    )"
+
+RUN R -e "remotes::install_version(                           \
+      package = 'party',                                      \
+      version = '1.3-10',                                     \
+      repos = 'https://packagemanager.rstudio.com/all/latest' \
+    )"
+
 # install mplus demo
 RUN wget https://www.statmodel.com/download/install_mpluslinux_demo64.bin \
     && sh install_mpluslinux_demo64.bin -i silent                         \
