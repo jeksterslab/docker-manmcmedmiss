@@ -36,6 +36,8 @@ R -e "remotes::install_version(                                \
     repos = 'https://packagemanager.rstudio.com/all/latest'    \
 )"
 
+R CMD INSTALL /usr/src/local/src/manMCMedMiss_0.9.1.tar
+
 wget https://www.statmodel.com/download/install_mpluslinux_demo64.bin
 sh install_mpluslinux_demo64.bin -i silent
 ln -s /opt/mplusdemo/mpdemo /usr/local/bin/
