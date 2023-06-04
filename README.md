@@ -8,7 +8,7 @@ Ivan Jacob Agaloos Pesigan
 
 ## Description
 
-Docker and Apptainer/Singularity containers for the `manMCMedMiss` project based on Archlinux.
+Docker and Apptainer/Singularity containers for the [manMCMedMiss](https://github.com/jeksterslab/manMCMedMiss) project based on [Arch Linux](https://archlinux.org/).
 
 ## Build
 
