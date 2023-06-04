@@ -1,6 +1,6 @@
 .PHONY: term clean
 
-manmcmedmiss.sif: Dockerfile apptainer.sh manMCMedMiss_0.9.1.tar.gz
+manmcmedmiss.sif: Dockerfile apptainer.sh src/manMCMedMiss_0.9.1.tar.gz src/setup.sh
 	@if (( $EUID != 0 )); then sudo docker build -t manmcmedmiss . ; else docker build -t manmcmedmiss . ; fi
 	@if (( $EUID != 0 )); then sudo -E bash apptainer.sh; else bash apptainer.sh; fi
 
