@@ -1,8 +1,8 @@
 .PHONY: term clean
 
 manmcmedmiss.sif: Dockerfile apptainer.sh manMCMedMiss_0.9.1.tar.gz
-	sudo docker build -t manmcmedmiss .
-	sudo -E bash apptainer.sh
+	@if (( $EUID != 0 )); then sudo docker build -t manmcmedmiss . ; else docker build -t manmcmedmiss . ; fi
+	@if (( $EUID != 0 )); then sudo -E bash apptainer.sh; else bash apptainer.sh; fi
 
 term:
 	@echo Building .bashrc and .vimrc...
