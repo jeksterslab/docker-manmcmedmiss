@@ -10,8 +10,7 @@ R -e "install.packages(                                        \
         'microbenchmark',                                      \
         'DT',                                                  \
         'lavaan',                                              \
-        'party',                                               \
-        'semmcci'                                              \
+        'party'                                                \
     ),                                                         \
     repos = 'https://packagemanager.rstudio.com/all/latest'    \
 )"
@@ -35,6 +34,8 @@ R -e "remotes::install_version(                                \
     version = '1.3-10',                                        \
     repos = 'https://packagemanager.rstudio.com/all/latest'    \
 )"
+
+R CMD INSTALL /usr/src/local/src/semmcci_1.1.2.tar.gz
 
 R CMD INSTALL /usr/src/local/src/manMCMedMiss_0.9.1.tar.gz
 
